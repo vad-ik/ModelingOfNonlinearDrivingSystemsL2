@@ -28,6 +28,10 @@ public class CD implements Method {
 //            X1[i + 1][2] = tmp2+h2*(a[3]-tmp0*tmp0);
 //            X1[i + 1][1] = (tmp1+h2*tmp0) / (1 +h2* a[2]);
 //            X1[i + 1][0] = tmp0 + h2 * (a[1]* X1[i + 1][1]* X1[i + 1][2]);
+
+//            X1[i + 1][2] = (tmp2 + h2 * tmp1*tmp0) / (1 + h2 * (a[3]));
+//            X1[i + 1][1] = (tmp1 + h2 * (a[2]-X1[i + 1][2])*tmp0) / (1 + h2 );
+//            X1[i + 1][0] = (tmp0 + h2 * X1[i + 1][1]) / (1 + h2 * (a[1]));
         }
 
         return X1;
